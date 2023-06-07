@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./PlacesCards.module.css";
 import PlaceCard from "../PlaceCard/PlaceCard.tsx";
+import TA_1 from "../../assets/TA_1.png";
 
 function PlacesCards() {
   const [myArray, setMyArray] = useState([1, 2, 3, 4]);
@@ -8,7 +9,12 @@ function PlacesCards() {
     const card = index;
     return (
       <div>
-        <PlaceCard element={card}></PlaceCard>
+        <PlaceCard
+          element={card}
+          image={TA_1}
+          title={"OTHER EXPERIENCE"}
+          text={"From Zagreb: Plitvice Lakes and Rastoke Day Trip"}
+        ></PlaceCard>
       </div>
     );
   });
